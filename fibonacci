@@ -1,0 +1,14 @@
+"""
+https://carlos1429.github.io/CV/
+"""
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return (fibonacci(n-1) + fibonacci(n-2))
+
+numero_elementos = int(input("Introduce el número de elementos de la serie de Fibonacci que quieres calcular: "))
+
+print("Serie de Fibonacci hasta", numero_elementos, "elementos:")
+for i in range(numero_elementos):
+    print(fibonacci(i))
